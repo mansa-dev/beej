@@ -1,0 +1,39 @@
+{
+  "name": "beej",
+  "version": "0.0.0",
+  "description": "Node.js Super Seed",
+  "main": "bin/app.js",
+  "scripts": {
+    "test": "gulp test",
+    "start": "export NODE_ENV=. && node bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mansa-dev/beej.git"
+  },
+  "keywords": [
+    "nodejs",
+    "seed",
+    "scaffold"
+  ],
+  "author": "Mansainfotech <developer@mansainfotech.com>",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/mansa-dev/beej/issues"
+  },
+  "homepage": "https://github.com/mansa-dev/beej#readme",
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "body-parser": "^1.13.3",
+    "config": "^1.15.0",
+    "cookie-parser": "^1.3.5",
+    "dotenv": "^1.2.0",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "mocha": "^2.3.0"
+  }
+}
