@@ -3,4 +3,5 @@
 module.exports = function(app){
   //Express server setup
   require('./express')(app);
+  require('./error')(app);
 }
