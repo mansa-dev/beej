@@ -16,9 +16,9 @@ module.exports = function(app){
   if (app.get('env') === 'development') {
     app.use(function(err, req, res, next) {
       res.status(err.status || 500);
-      res.render('error', {
-        message: err.message,
-        error: err
+      res.json({
+        error: err.message,
+        data: err
       });
     });
   }
@@ -27,9 +27,9 @@ module.exports = function(app){
   // no stacktraces leaked to user
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
-    res.render('error', {
-      message: err.message,
-      error: {}
+    res.json({
+      error: err.message,
+      data: {}
     });
   });
 

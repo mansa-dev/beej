@@ -12,6 +12,12 @@ var app = express();
 //config application
 require('./config')(app);
 
+//load routes
+require('./routes')(app);
+
+//setup error handler
+require('./config/error')(app);
+
 var server = require("http").createServer(app);
 // Start server
 server.listen(config.get("server.port"), config.get("server.ip"), function () {
