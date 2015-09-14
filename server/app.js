@@ -16,7 +16,7 @@ require('./config')(app);
 require('./routes')(app);
 
 //setup error handler
-require('./config/error')(app);
+//require('./config/error')(app);
 
 var server = require("http").createServer(app);
 // Start server

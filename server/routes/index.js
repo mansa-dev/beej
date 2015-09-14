@@ -8,7 +8,7 @@
 var router = require('express').Router();
 
 module.exports = function(app){
-
+app.use('/api',require('./v1'));
   //load routes
 
 };
